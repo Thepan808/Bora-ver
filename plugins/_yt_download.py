@@ -10,7 +10,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
 from youtubesearchpython import VideosSearch
-from pytube import YouTube
+from yt_dlp import YouTube
 import os
 
 
