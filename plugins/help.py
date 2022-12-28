@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("🔍Search YouTube", switch_inline_query_current_chat="")
+            InlineKeyboardButton("🔍Pesquisa no YouTube", switch_inline_query_current_chat="")
         ]
     ]
 )
@@ -22,9 +22,9 @@ BUTTONS = InlineKeyboardMarkup(
 @Client.on_message(filters.command("help") & filters.private)
 async def help(bot, message):
     await message.reply(
-        "This bot can search for YouTube videos & download YouTube videos, playlists and more. Use below methods to do these\n\n"
-        "◉ Search for videos - <i>Use inline mode</i>\n"
-        "◉ Download videos - <i>Send any link of a Youtube video and select a quality</i>\n"
-        "◉ Download videos from playlist - <i>Send any link of a YouTube playlist</i>\n\nThis is quite simple. ||Enjoy it!!||",
+        "Este bot pode procurar vídeos do YouTube e baixar vídeos do YouTube, listas de reprodução e muito mais. Use os métodos abaixo para fazer isso\n\n"
+        "◉ Procurar vídeos - <i>Usar o modo inline</i>\n"
+        "◉ Baixar vídeos - <i>Envie qualquer link de um vídeo do Youtube e selecione uma qualidade</i>\n"
+        "◉ Baixar vídeos da lista de reprodução - <i>Enviar qualquer link de uma lista de reprodução do YouTube</i>\n\nIsso é bastante simples. ||Aproveite!!||",
         reply_markup=BUTTONS
     )
