@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("🔍Search YouTube", switch_inline_query_current_chat="")
+            InlineKeyboardButton("🔍Pesquisa no YouTube", switch_inline_query_current_chat="")
         ]
     ]
 )
@@ -23,5 +23,5 @@ START_BUTTONS = InlineKeyboardMarkup(
 async def start(bot, message):
     reply_markup = START_BUTTONS
     await message.reply(
-        f"Hello {message.from_user.first_name}!\n\nThis bot can search for YouTube videos & download YouTube videos, playlists and more. "
-        f"To search videos click the below \"🔍Search Youtube\" button. /help for more info.", reply_markup=reply_markup)
+        f"Olá {message.from_user.first_name}!\n\nEste bot pode procurar vídeos do YouTube e baixar vídeos do YouTube, listas de reprodução e muito mais. "
+        f"Para pesquisar vídeos, clique no botão abaixo \"🔍Pesquisa no Youtube\" botão. /help para mais informações.", reply_markup=reply_markup)
